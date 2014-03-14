@@ -1,0 +1,16 @@
+{
+    "name": "peredaj/jquerybundle",
+    "license": "MIT",
+    "type": "syfony-bundle",
+    "description": "The Symfony 2 bundle",
+    "require": {
+        "ivaynberg/select2": "dev-master"
+    },
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-0": {
+            "Peredaj\\JQueryBundle": ""
+        }
+    },
+    "target-dir": "Peredaj/JQueryBundle"
+}

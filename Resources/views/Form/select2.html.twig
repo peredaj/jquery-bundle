@@ -1,0 +1,6 @@
+
+{% block jquery_select2_javascript %}
+{% spaceless %}
+<script>/*<![CDATA[*/(function($){ if($ == undefined) return; $(function(){ $('#{{ id }}').select2({{ configs | json_encode | raw }}) }); })(jQuery)/*]]>*/</script>
+{% endspaceless %}
+{% endblock jquery_select2_javascript %}

@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <!--
+    <parameters>
+    </parameters>
+    -->
+
+    <services>
+        
+        <service id="peredaj_jquery.twig.form_extension" class="Peredaj\JQueryBundle\Twig\Extension\FormExtension">
+            <tag name="twig.extension" />
+            <argument type="service" id="twig.form.renderer" />
+        </service>
+        
+        <service id="peredaj.jquery_select2.form.type" class="Peredaj\JQueryBundle\Form\Type\Select2Type" abstract="true" />
+        <!--
+        
+        <service id="jQuery.xdsoft_datetime.form.type" class="JQuery\JQueryBundle\Form\Type\XDSoftDateTimeType">
+            <tag name="form.type" alias="xdsoft_datetimepicker"/>
+        </service>
+        
+        <service id="jQuery.table_datetimepicker.form.type" class="JQuery\JQueryBundle\Form\Type\TableDatetimePicker">
+            <tag name="form.type" alias="table_datetimepicker"/>
+        </service>
+        -->
+    </services>
+</container>

@@ -1,0 +1,21 @@
+{% extends "::base.html.twig" %}
+
+{% block stylesheets %}
+{{ parent() }}
+<link href="{{ asset('/bundles/peredajjquery/select2/css/select2.css') }}" rel="stylesheet"/>
+{{ form_stylesheet(form) }}
+{% endblock stylesheets %}
+
+
+
+{% block body %}
+{{ form(form) }}
+{% endblock body %}
+
+
+
+{% block javascripts %}
+{{ parent() }}
+<script src="{{ asset('/bundles/peredajjquery/select2/js/select2.js') }}"></script>
+{{ form_javascript(form) }}
+{% endblock javascripts %}
